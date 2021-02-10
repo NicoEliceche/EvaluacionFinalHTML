@@ -1,0 +1,18 @@
+body{
+	background-color: gray;
+}
+
+footer{
+	margin-top: 20px;
+}
+
+image[xlink:href$=".svg"]{
+	border-radius: 50px;
+}
+
+input:focus{
+	width: 380px;
+	height: 60px;
+	font-size: 30px;
+}
+

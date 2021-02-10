@@ -1,0 +1,146 @@
+img{
+	border-radius: 15px;
+}
+
+#Contenedor{
+	font-family: helvetica;
+	font-size: 16px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#Encabezado{
+	display: block;
+	margin: 0 auto;
+}
+
+.itemIndice{
+	list-style-type: circle;
+}
+
+a[href^="#"]{
+	color: blue;
+}
+
+img[src$=".jpg"]{
+	border-radius: 20px;
+	border: 1px solid black;
+}
+
+/* De este modo toma el tamaño pero del viewport
+
+*{
+	margin: 1vh 1vw;
+}
+
+*/
+
+.enlace:{
+	color: #00ffff;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+#ul1{
+	list-style-type: square;
+}
+
+h1 + h3{
+	text-decoration: underline;
+}
+
+h1 ~ h3{
+	font-family: Times New Roman;
+	font-size: 20px;
+}
+
+header> h3{
+	color: gray;
+}
+
+/* Se puede utilizar de este modo también
+
+ul li{
+	list-style-type: circle;
+}
+
+*/
+
+a[href^="http://"]:visited{
+	color: red;
+}
+
+a:hover{
+	color: green;
+}
+
+h2{
+	text-decoration: underline;
+}
+
+p::first-letter{
+	text-transform: capitalize;
+}
+
+p::first-line{
+	font-size: 16px;
+}
+
+p::selection{
+	color: blue;
+	background-color: red;
+}
+
+/*Veremos un ejemplo con los siguientes
+
+::before::after
+:first-child
+:last-child
+
+*/
+
+#ul1>li:first-child>a::after{
+	content: "*"
+}
+
+#ul1>li:first-child>a::before{
+	content: "*"
+}
+
+#ul1>li:nth-child(2)>a::after{
+	content: "*"
+}
+
+#ul1>li:nth-child(2)>a::before{
+	content: "*"
+}
+
+#ul1>li:last-child>a::after{
+	content: "*"
+}
+
+#ul1>li:last-child>a::before{
+	content: "*"
+}
+
+/*Las Pseudo-clases son:
+
+:link
+:active
+:hover
+:checked
+:first-child
+:last-child
+:nth-child
+
+*/
+
+/*Los Pseudo-elementos son:
+
+::after
+::before
+::first-letter
+::first-line
+::selection
+
+*/
